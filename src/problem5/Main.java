@@ -1,6 +1,6 @@
 package problem5;
 
-public class MainApp {
+public class Main {
 
     public static void main(String[] args) {
         String[] accounts = {"accB", "accA", "accB", "accC"};
