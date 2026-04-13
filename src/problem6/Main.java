@@ -1,17 +1,22 @@
-package problem5;
+package problem6;
 
 public class Main {
 
     public static void main(String[] args) {
-        String[] accounts = {"accB", "accA", "accB", "accC"};
-        String target = "accB";
+        int[] risks = {10, 25, 50, 100};
+        int target = 30;
 
-        // Linear Search (first occurrence)
-        for (int i = 0; i < accounts.length; i++) {
-            if (accounts[i].equals(target)) {
-                System.out.println("Found at index: " + i);
+        int floor = -1, ceil = -1;
+
+        for (int i = 0; i < risks.length; i++) {
+            if (risks[i] <= target) floor = risks[i];
+            if (risks[i] >= target) {
+                ceil = risks[i];
                 break;
             }
         }
+
+        System.out.println("Floor: " + floor);
+        System.out.println("Ceiling: " + ceil);
     }
 }
