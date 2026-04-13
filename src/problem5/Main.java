@@ -1,14 +1,17 @@
-package problem4;
+package problem5;
 
-import java.util.Arrays;
-
-public class Main {
+public class MainApp {
 
     public static void main(String[] args) {
-        double[] returns = {12, 8, 15};
+        String[] accounts = {"accB", "accA", "accB", "accC"};
+        String target = "accB";
 
-        Arrays.sort(returns);
-
-        System.out.println(Arrays.toString(returns));
+        // Linear Search (first occurrence)
+        for (int i = 0; i < accounts.length; i++) {
+            if (accounts[i].equals(target)) {
+                System.out.println("Found at index: " + i);
+                break;
+            }
+        }
     }
 }
