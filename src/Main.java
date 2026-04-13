@@ -1,5 +1,4 @@
 package problem1;
-
 import java.util.*;
 
 class Transaction {
