@@ -1,6 +1,5 @@
 package problem1;
 import java.util.*;
-
 class Transaction {
     String id;
     double fee;
